@@ -31,8 +31,9 @@
     </div>
   </div>
 
-  <a href="https://wa.me/6282333286255" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    <span class="wa-text">Hubungi Kami</span>
   </a>
 
   <style>
@@ -41,21 +42,32 @@
   bottom: 20px;
   right: 20px;
   z-index: 999;
+  display: flex;
+  align-items: center;
   background-color: #25d366;
-  border-radius: 50%;
-  padding: 12px;
+  padding: 6px 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .whatsapp-float img {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
+
+.wa-text {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 
     </style>
 
@@ -115,6 +127,26 @@
         </div>
     </div>
   </header>
+
+  <style>
+      /* Matikan sticky default di desktop */
+    .header-area {
+      position: static;
+      top: auto;
+      z-index: auto;
+    }
+    
+    /* Aktifkan sticky hanya di layar mobile */
+    @media (max-width: 768px) {
+      .header-area {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white; /* atau warna latar yang sesuai */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* opsional: biar ada bayangan */
+      }
+    }
+  </style>
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner">
